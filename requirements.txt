@@ -5,3 +5,4 @@ scikit-learn==1.4.1.post1
 yfinance==0.2.54
 requests==2.32.3
 beautifulsoup4==4.12.3
+gunicorn
