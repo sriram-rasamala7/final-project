@@ -1,0 +1,10 @@
+risk_profile,name,category,three_year_return,five_year_return,min_sip,risk
+Low,HDFC Short Term Debt Fund,Debt - Short Duration,7.4,7.9,500,Low
+Low,ICICI Prudential Corporate Bond Fund,Debt - Corporate Bond,7.8,8.1,1000,Low
+Low,SBI Magnum Gilt Fund,Debt - Gilt,8.2,8.7,500,Low
+Medium,HDFC Balanced Advantage Fund,Hybrid - Balanced Advantage,14.2,13.1,500,Moderate
+Medium,SBI Equity Hybrid Fund,Hybrid - Aggressive,15.0,12.8,500,Moderate
+Medium,Kotak Equity Opportunities Fund,Equity - Large and Mid Cap,16.9,15.2,1000,Moderate
+High,Parag Parikh Flexi Cap Fund,Equity - Flexi Cap,19.4,20.8,1000,High
+High,Mirae Asset Large and Midcap Fund,Equity - Large and Mid Cap,21.2,18.5,1000,High
+High,Nippon India Small Cap Fund,Equity - Small Cap,24.5,22.1,500,Very High

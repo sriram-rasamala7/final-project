@@ -1,0 +1,79 @@
+﻿{% extends "base.html" %}
+{% block title %}Profit Path Home{% endblock %}
+{% block content %}
+<header class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Profit Path</p>
+    <h1>Plan, analyze, and invest with more long-term clarity.</h1>
+    <p class="hero-text">
+      Explore risk, stock trends, SIP planning, portfolio balance, and multi-year stock ideas through a calmer,
+      more organized interface built for practical investing decisions.
+    </p>
+    <div class="hero-tags">
+      <span>Stock-name search</span>
+      <span>Daily price guidance</span>
+      <span>10 long-term stock ideas</span>
+      <span>Live IPO GMP watch</span>
+      <span>Salary-based SIP planning</span>
+    </div>
+    <div class="hero-actions">
+      <a class="hero-button" href="{{ url_for('plans_page') }}">Open Investment Plans</a>
+      <a class="hero-button ghost-link" href="{{ url_for('risk_page') }}">Start With Risk Profile</a>
+    </div>
+    <div class="hero-summary">
+      <div class="summary-chip">
+        <span class="summary-label">Daily View</span>
+        <strong>Prediction + Exit Signal</strong>
+      </div>
+      <div class="summary-chip">
+        <span class="summary-label">Planning</span>
+        <strong>SIP + Portfolio Mix</strong>
+      </div>
+      <div class="summary-chip">
+        <span class="summary-label">Long Term</span>
+        <strong>2+ Year Stock Ideas</strong>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section-intro">
+  <p class="eyebrow">Explore</p>
+  <h2>Choose the analysis page you want to work with.</h2>
+  <p>Each section is separated into its own screen to keep the workflow focused and less cluttered.</p>
+</section>
+
+<main class="dashboard quick-grid feature-grid">
+  <a class="panel link-panel" href="{{ url_for('risk_page') }}">
+    <span class="panel-kicker">01</span>
+    <h2>Risk Profile</h2>
+    <p>Assess low, medium, or high risk appetite.</p>
+  </a>
+  <a class="panel link-panel" href="{{ url_for('predict_page') }}">
+    <span class="panel-kicker">02</span>
+    <h2>Stock Prediction</h2>
+    <p>Enter a stock name and view daily price guidance.</p>
+  </a>
+  <a class="panel link-panel" href="{{ url_for('sip_page') }}">
+    <span class="panel-kicker">03</span>
+    <h2>SIP Planner</h2>
+    <p>Estimate the monthly SIP needed for your goal.</p>
+  </a>
+  <a class="panel link-panel" href="{{ url_for('portfolio_page') }}">
+    <span class="panel-kicker">04</span>
+    <h2>Portfolio</h2>
+    <p>See mutual funds, allocation, and undervalued stocks.</p>
+  </a>
+  <a class="panel link-panel" href="{{ url_for('ipo_page') }}">
+    <span class="panel-kicker">05</span>
+    <h2>IPO GMP</h2>
+    <p>Check live IPO GMP, apply dates, and price bands.</p>
+  </a>
+  <a class="panel link-panel" href="{{ url_for('plans_page') }}">
+    <span class="panel-kicker">06</span>
+    <h2>Investment Plans</h2>
+    <p>Get automatic 2+ year company suggestions with target prices.</p>
+  </a>
+</main>
+{% endblock %}
+

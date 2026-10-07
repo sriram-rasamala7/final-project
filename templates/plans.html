@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Investment Plans{% endblock %}
+{% block content %}
+<main class="dashboard">
+  <section class="page-intro">
+    <p class="eyebrow">Investment Plans</p>
+    <h1>Generate multi-year stock ideas with targets, scoring, and clearer long-term context.</h1>
+    <p>Choose time span, risk profile, and suggestion count to build an automatic long-term shortlist.</p>
+  </section>
+  <section class="panel">
+    <div class="panel-header">
+      <h2>2+ Year Investment Plans</h2>
+      <p>Automatic long-term stock ideas using a richer mix of trend, momentum, volatility, strength, and confirmation signals.</p>
+    </div>
+    <div class="grid three-col">
+      <label>
+        Time Span (Years)
+        <input type="number" id="plan_years" value="2" min="2" max="10">
+      </label>
+      <label>
+        Risk Profile
+        <select id="plan_risk">
+          <option value="Balanced">Balanced</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+      </label>
+      <label>
+        Number of Suggestions
+        <input type="number" id="plan_count" value="10" min="5" max="15">
+      </label>
+    </div>
+    <div class="inline-actions">
+      <button id="plansBtn">Generate Plans</button>
+    </div>
+    <div id="plansResult" class="result-grid"></div>
+  </section>
+</main>
+{% endblock %}

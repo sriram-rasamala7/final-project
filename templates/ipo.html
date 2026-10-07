@@ -1,0 +1,25 @@
+﻿{% extends "base.html" %}
+{% block title %}Live IPO GMP | Profit Path{% endblock %}
+{% block content %}
+<section class="section-intro shaped-header">
+  <p class="eyebrow">Live IPO Watch</p>
+  <h1>Track current IPOs with GMP, apply dates, and issue prices.</h1>
+  <p>
+    View mainboard and SME IPO opportunities from public IPO trackers. GMP is unofficial grey-market information,
+    so use it only as an extra signal with fundamentals, valuation, and risk profile.
+  </p>
+</section>
+
+<main class="dashboard">
+  <section class="panel full-width action-panel">
+    <div>
+      <p class="eyebrow">Current Market</p>
+      <h2>IPO GMP Tracker</h2>
+      <p>Refresh to fetch the latest available IPO data including GMP, price band, open date, close date, and lot size.</p>
+    </div>
+    <button id="ipoBtn" class="primary-btn">Refresh IPO List</button>
+  </section>
+
+  <section id="ipoResult" class="result-grid full-width"></section>
+</main>
+{% endblock %}

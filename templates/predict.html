@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Stock Prediction{% endblock %}
+{% block content %}
+<main class="dashboard">
+  <section class="page-intro">
+    <p class="eyebrow">Stock Prediction</p>
+    <h1>Check daily direction, signal strength, and a simple exit view for a company.</h1>
+    <p>Search by company name and review price guidance with model-backed output in a cleaner prediction workspace.</p>
+  </section>
+  <section class="panel">
+    <div class="panel-header">
+      <h2>Stock Prediction</h2>
+      <p>Enter the company name, not the NSE symbol, and generate a focused prediction summary.</p>
+    </div>
+    <div class="grid two-col">
+      <label>
+        Stock Name
+        <input type="text" id="stock_name" list="stock-list" value="Reliance Industries" placeholder="Enter company name">
+        <datalist id="stock-list">
+          {% for name in stock_names %}
+          <option value="{{ name }}"></option>
+          {% endfor %}
+        </datalist>
+      </label>
+      <div class="inline-actions align-end">
+        <button id="predictBtn">Predict Stock</button>
+        <button class="ghost" id="exitBtn">Check Exit Signal</button>
+      </div>
+    </div>
+    <div id="analysisResult" class="result-grid"></div>
+    <div id="extraResult" class="result-grid"></div>
+  </section>
+</main>
+{% endblock %}

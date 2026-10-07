@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}SIP Planner{% endblock %}
+{% block content %}
+<main class="dashboard">
+  <section class="page-intro">
+    <p class="eyebrow">SIP Planner</p>
+    <h1>Turn income and goals into a practical monthly investment plan.</h1>
+    <p>Estimate your SIP target, compare affordability, and review mutual fund ideas in one dedicated planning page.</p>
+  </section>
+  <section class="panel">
+    <div class="panel-header">
+      <h2>SIP Planner</h2>
+      <p>Use salary, goal amount, and return expectations to shape a more realistic SIP strategy.</p>
+    </div>
+    <div class="grid three-col">
+      <label>Salary <input type="number" id="sip_salary" value="90000"></label>
+      <label>Goal Amount <input type="number" id="sip_goal" value="10000000"></label>
+      <label>Expected Return (%) <input type="number" id="sip_return" value="12"></label>
+    </div>
+    <div class="grid two-col">
+      <label>Years <input type="number" id="sip_years" value="15"></label>
+      <div class="inline-actions align-end">
+        <button id="sipSecondaryBtn">Calculate SIP</button>
+      </div>
+    </div>
+    <div id="sipResult" class="result-grid"></div>
+  </section>
+</main>
+{% endblock %}

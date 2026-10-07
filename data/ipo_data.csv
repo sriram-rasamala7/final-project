@@ -1,0 +1,5 @@
+name,sector,issue_size,subscription_times,pe_ratio,promoter_holding_pct,profit_making,years_in_operation
+Example FinTech IPO,FinTech,2200,42,78,52,True,8
+Green Energy Limited,Renewable Energy,950,14,36,68,True,13
+NextGen EdTech IPO,EdTech,480,6,112,38,False,4
+Urban Mobility Systems,Transport Tech,1250,18,54,47,True,7
